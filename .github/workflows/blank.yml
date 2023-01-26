@@ -7,7 +7,7 @@ on:
     types: [base_image_updated]
 
 jobs:
-  build_mainline_alpine:
+  mainline_alpine:
     name: mainline-alpine
     runs-on: ubuntu-latest
     steps:
@@ -25,4 +25,5 @@ jobs:
         with:
           context: .
           push: true
+          file: Dockerfile.mainline-alpine
           tags: faryon93/nginx:mainline-alpine,faryon93/nginx:alpine
