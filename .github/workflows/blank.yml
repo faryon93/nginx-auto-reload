@@ -25,5 +25,6 @@ jobs:
         with:
           context: .
           push: true
+          pull: true
           file: Dockerfile.mainline-alpine
           tags: faryon93/nginx:mainline-alpine,faryon93/nginx:alpine
