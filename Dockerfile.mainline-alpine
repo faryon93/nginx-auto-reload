@@ -1,0 +1,5 @@
+FROM nginx:mainline-alpine
+MAINTAINER Maximilian Pachl <m@ximilian.info>
+
+RUN apk add --update --no-cache inotify-tools
+ADD 90-nginx-auto-reload.sh /docker-entrypoint.d/
